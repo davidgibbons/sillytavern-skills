@@ -81,6 +81,10 @@ Generate Character Card V3 JSON outputs that are spec-compliant and high quality
   - Comparison of Prose, Attributes, AliChat, JED/JED+, Plaintext, and W++ with use-case guidance.
 - `examples/format-comparison.md`
   - Same character concept shown in each major format for quick side-by-side learning.
+- `examples/command-orchestration-pattern.md`
+  - Generic template for command-triggered lorebook actions with weighted outcomes and ephemeral cleanup.
+- `examples/secret-reveal-pattern.md`
+  - Public/secret split with delayed reveals, belief-vs-fact layering, and cadence control.
 - `assets/templates/minimal-card-v3.json`
   - Lean starter for quick generation.
 - `assets/templates/standard-card-v3.json`

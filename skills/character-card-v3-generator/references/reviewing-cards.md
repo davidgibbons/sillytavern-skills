@@ -51,6 +51,9 @@ Pass criteria:
 - Keys are specific enough to avoid accidental activation.
 - Trigger coverage matches intended scenarios.
 - Token budget and insertion order are tuned.
+- Delayed-reveal entries are gated correctly and do not leak core secrets early.
+- Rare secret reactions use cadence controls (delay/sticky/cooldown or equivalent) to avoid repetitive firing.
+- Belief entries and fact entries are separated, and post-reveal cleanup is planned.
 
 Pass criteria:
 - Lore entries fire when expected and stay quiet when irrelevant.

@@ -31,6 +31,7 @@ These notes capture guidance harvested once from linked community pages. Use as 
 - Card packaging and assets matter: PNG/APNG embedding, CHARX `card.json`, and URI strategy directly affect portability.
 - Formal review rubrics improve iteration speed by separating structural, behavioral, and portability failures.
 - ST character design notes reinforce token economics: always-on fields consume persistent context, while first-message/examples are less persistent.
+- Macro-style trigger markers and layered lore modules can improve consistency for complex scenario logic when kept modular and testable.
 
 ## Links
 

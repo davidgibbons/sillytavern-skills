@@ -62,6 +62,24 @@ Prefer event families over monoliths:
 
 Use insertion ordering and priority to keep deterministic behavior under token pressure.
 
+### Event Pipeline Pattern
+
+For complex scenarios, use a simple pipeline:
+
+1. Detect
+- Trigger on explicit event markers, scene cues, or stable macro tokens.
+
+2. Resolve
+- Select one event outcome entry (deterministic or weighted).
+
+3. Apply
+- Inject the consequence entry (state delta + behavior implications).
+
+4. Render
+- Format final output style separately (for example with response rules or regex display transforms).
+
+This keeps world logic reusable while preventing style/logic coupling.
+
 ## Graceful Multi-Character Behavior
 
 - Define a response arbitration rule in always-on fields (for example: "Only one NPC leads each turn unless scene explicitly requires multiple speakers").
