@@ -1,0 +1,4 @@
+interface:
+  display_name: "Character Card V3 Generator"
+  short_description: "Build high-quality Character Card V3 profiles"
+  default_prompt: "Use $character-card-v3-generator to generate a Character Card V3 and lorebook from my concept."
