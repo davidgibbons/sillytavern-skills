@@ -59,6 +59,8 @@ Create production-ready SillyTavern third-party extensions with the documented e
   - Practical breakdown of the `city-unit/st-extension-example` template and reuse patterns.
 - `references/extension-quality-guidelines.md`
   - Research-backed recommendations for quality, maintainability, security, and release readiness.
+- `references/template-selection-guide.md`
+  - Decision guide for choosing `default` vs `slash` scaffold mode and migrating between them.
 - `assets/templates/extension/manifest.json`
   - Starter manifest with placeholders.
 - `assets/templates/extension/index.js`
