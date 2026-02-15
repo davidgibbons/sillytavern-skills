@@ -1,0 +1,11 @@
+{
+  "display_name": "__EXT_DISPLAY_NAME__",
+  "loading_order": 10,
+  "requires": [],
+  "optional": [],
+  "js": "index.js",
+  "css": "style.css",
+  "author": "__EXT_AUTHOR__",
+  "version": "0.1.0",
+  "homePage": "__EXT_HOMEPAGE__"
+}

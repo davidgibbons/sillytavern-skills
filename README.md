@@ -1,63 +1,50 @@
-# Character Card V3 Skill
+# SillyTavern Skills
 
-This repository contains a Codex skill for generating and reviewing Character Card V3 cards, including lorebooks, format strategy, regex-scoped transforms, and quality review workflows.
+This repository contains Codex skills for SillyTavern workflows.
 
-## Skill Location
+## Skills
 
-- Skill folder: `/Users/dgibbons/git/character-card-skill/skills/character-card-v3-generator`
-- Main instructions: `/Users/dgibbons/git/character-card-skill/skills/character-card-v3-generator/SKILL.md`
+1. `character-card-v3-generator`
+- Purpose: Generate, refine, and validate Character Card V3 cards and lorebooks.
+- Path: `/Users/dgibbons/git/sillytavern-skills/skills/character-card-v3-generator`
+- Main file: `/Users/dgibbons/git/sillytavern-skills/skills/character-card-v3-generator/SKILL.md`
 
-## What The Skill Covers
+2. `sillytavern-extension-builder`
+- Purpose: Scaffold and ship high-quality third-party SillyTavern extensions.
+- Path: `/Users/dgibbons/git/sillytavern-skills/skills/sillytavern-extension-builder`
+- Main file: `/Users/dgibbons/git/sillytavern-skills/skills/sillytavern-extension-builder/SKILL.md`
 
-- CCv3 field mapping and structure guidance.
-- Character writing quality guidelines.
-- Lorebook design and trigger strategy.
-- Multi-character and world/scenario card patterns.
-- Card-scoped regex usage (SillyTavern-specific).
-- Image/asset packaging formats (PNG/APNG, JSON, CHARX).
-- Format options (Prose, Attributes, AliChat, JED/JED+, Plaintext, W++).
-- Quality review rubric and release readiness checks.
+## Usage In Codex
 
-## How To Use In Codex
-
-Mention the skill by name in your prompt:
+Mention a skill in your prompt:
 
 ```text
-Use $character-card-v3-generator to create a CCv3 card for ...
-```
-
-Example requests:
-
-```text
-Use $character-card-v3-generator to generate a standard CCv3 card for a mystery-school scenario.
+Use $character-card-v3-generator to generate a standard CCv3 card for this concept.
 ```
 
 ```text
-Use $character-card-v3-generator to convert this existing card to CCv3 and improve lorebook trigger quality.
+Use $sillytavern-extension-builder to scaffold a slash-command-first extension called my-tools.
 ```
 
-```text
-Use $character-card-v3-generator to review this card and score it with the built-in quality rubric.
+## Extension Scaffold Examples
+
+Default template:
+
+```bash
+/Users/dgibbons/git/sillytavern-skills/skills/sillytavern-extension-builder/scripts/scaffold_extension.sh /path/to/SillyTavern/public/scripts/extensions/third-party my-ext "My Ext" "you" "https://github.com/you/my-ext"
 ```
 
-## Key Files
+Slash-command-first template:
 
-- Skill workflow: `/Users/dgibbons/git/character-card-skill/skills/character-card-v3-generator/SKILL.md`
-- References: `/Users/dgibbons/git/character-card-skill/skills/character-card-v3-generator/references/`
-- Examples: `/Users/dgibbons/git/character-card-skill/skills/character-card-v3-generator/examples/`
-- Templates: `/Users/dgibbons/git/character-card-skill/skills/character-card-v3-generator/assets/templates/`
-- Validator: `/Users/dgibbons/git/character-card-skill/skills/character-card-v3-generator/scripts/validate_card.py`
+```bash
+/Users/dgibbons/git/sillytavern-skills/skills/sillytavern-extension-builder/scripts/scaffold_extension.sh --template slash /path/to/SillyTavern/public/scripts/extensions/third-party my-ext "My Ext" "you" "https://github.com/you/my-ext"
+```
 
 ## Validation
 
-Run skill structure validation:
+Validate skill structure:
 
 ```bash
-python3 /Users/dgibbons/.codex/skills/.system/skill-creator/scripts/quick_validate.py /Users/dgibbons/git/character-card-skill/skills/character-card-v3-generator
-```
-
-Validate a generated card JSON:
-
-```bash
-python3 /Users/dgibbons/git/character-card-skill/skills/character-card-v3-generator/scripts/validate_card.py /path/to/card.json
+python3 /Users/dgibbons/.codex/skills/.system/skill-creator/scripts/quick_validate.py /Users/dgibbons/git/sillytavern-skills/skills/character-card-v3-generator
+python3 /Users/dgibbons/.codex/skills/.system/skill-creator/scripts/quick_validate.py /Users/dgibbons/git/sillytavern-skills/skills/sillytavern-extension-builder
 ```
