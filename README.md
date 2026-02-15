@@ -6,13 +6,13 @@ This repository contains Codex skills for SillyTavern workflows.
 
 1. `character-card-v3-generator`
 - Purpose: Generate, refine, and validate Character Card V3 cards and lorebooks.
-- Path: `/Users/dgibbons/git/sillytavern-skills/skills/character-card-v3-generator`
-- Main file: `/Users/dgibbons/git/sillytavern-skills/skills/character-card-v3-generator/SKILL.md`
+- Path: `skills/character-card-v3-generator`
+- Main file: `skills/character-card-v3-generator/SKILL.md`
 
 2. `sillytavern-extension-builder`
 - Purpose: Scaffold and ship high-quality third-party SillyTavern extensions.
-- Path: `/Users/dgibbons/git/sillytavern-skills/skills/sillytavern-extension-builder`
-- Main file: `/Users/dgibbons/git/sillytavern-skills/skills/sillytavern-extension-builder/SKILL.md`
+- Path: `skills/sillytavern-extension-builder`
+- Main file: `skills/sillytavern-extension-builder/SKILL.md`
 
 ## Usage In Codex
 
@@ -31,13 +31,13 @@ Use $sillytavern-extension-builder to scaffold a slash-command-first extension c
 Default template:
 
 ```bash
-/Users/dgibbons/git/sillytavern-skills/skills/sillytavern-extension-builder/scripts/scaffold_extension.sh /path/to/SillyTavern/public/scripts/extensions/third-party my-ext "My Ext" "you" "https://github.com/you/my-ext"
+skills/sillytavern-extension-builder/scripts/scaffold_extension.sh /path/to/SillyTavern/public/scripts/extensions/third-party my-ext "My Ext" "you" "https://github.com/you/my-ext"
 ```
 
 Slash-command-first template:
 
 ```bash
-/Users/dgibbons/git/sillytavern-skills/skills/sillytavern-extension-builder/scripts/scaffold_extension.sh --template slash /path/to/SillyTavern/public/scripts/extensions/third-party my-ext "My Ext" "you" "https://github.com/you/my-ext"
+skills/sillytavern-extension-builder/scripts/scaffold_extension.sh --template slash /path/to/SillyTavern/public/scripts/extensions/third-party my-ext "My Ext" "you" "https://github.com/you/my-ext"
 ```
 
 ## Validation
@@ -45,6 +45,6 @@ Slash-command-first template:
 Validate skill structure:
 
 ```bash
-python3 /Users/dgibbons/.codex/skills/.system/skill-creator/scripts/quick_validate.py /Users/dgibbons/git/sillytavern-skills/skills/character-card-v3-generator
-python3 /Users/dgibbons/.codex/skills/.system/skill-creator/scripts/quick_validate.py /Users/dgibbons/git/sillytavern-skills/skills/sillytavern-extension-builder
+python3 "$CODEX_HOME/skills/.system/skill-creator/scripts/quick_validate.py" skills/character-card-v3-generator
+python3 "$CODEX_HOME/skills/.system/skill-creator/scripts/quick_validate.py" skills/sillytavern-extension-builder
 ```

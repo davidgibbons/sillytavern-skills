@@ -1,9 +1,6 @@
 # Applied Quality Patterns (Generalized)
 
-Based on review of these cards in this repo:
-- `/Users/dgibbons/git/character-card-skill/Sasha, your new innocent warden.png`
-- `/Users/dgibbons/git/character-card-skill/Super Falls Academy .png`
-- `/Users/dgibbons/git/character-card-skill/Delinquent classmate.png`
+Based on review of representative high-engagement character/world cards and normalized into reusable patterns.
 
 ## What Performs Well (Keep)
 
