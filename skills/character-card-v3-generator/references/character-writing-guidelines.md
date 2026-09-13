@@ -12,6 +12,16 @@ Make the model produce stable, vivid, and controllable behavior over long chats.
 - Keep each field focused on one job.
 - Use external reference material (wiki/tropes/archetype sources) as draft input, then manually prune to only behavior-relevant facts.
 
+## Causal Construction (Build an Engine, Not a Hairball)
+
+A trait list ("loyal, sarcastic, secretly insecure") gives the model nothing to reason from. A trait with a cause gives it a chain to follow and extend.
+
+- Chain every trait to a cause and an effect: `trait -> why -> observable behavior`. Example: speech impediment -> fell off a cliff as a child -> repeats himself when startled.
+- Cross-link traits instead of listing them in isolation. Traits sharing a cause (a betrayal, a loss, a rule broken) should reference that cause from more than one field, so the model can pull the connection from whichever angle the conversation approaches it.
+- Anchor one specific, unresolved memory instead of narrating a whole backstory. A concrete sensory detail or line of dialogue carries more weight than a paragraph of exposition and gives the model something to reuse verbatim.
+- Leave real tension unresolved. A character torn between two loyalties, or holding a belief they haven't fully tested, produces more varied dialogue than one whose arc is already settled — resolving everything removes the friction that makes responses vary turn to turn.
+- Repeat the load-bearing cause across fields (`personality`, `scenario`, `mes_example`) rather than stating it once. Under context pressure, not every field survives; an anchor stated only once can be dropped entirely.
+
 ## Field-by-Field Guidance
 
 - `description`
@@ -57,6 +67,8 @@ Make the model produce stable, vivid, and controllable behavior over long chats.
 - Message style matches intended chat cadence.
 - No contradictory instructions across fields.
 - Appearance/personality tags are concrete enough for the model to act on without guesswork.
+- Every trait traces back to a stated cause, not just an adjective.
+- At least one real tension or contradiction remains unresolved — the arc isn't fully settled.
 
 ## Anti-Patterns
 
@@ -64,6 +76,8 @@ Make the model produce stable, vivid, and controllable behavior over long chats.
 - Duplicate constraints repeated in many sections.
 - Purely aesthetic traits without actionable behavior.
 - Contradictions between tone, goals, and scenario stakes.
+- Trait lists with no causal chain — arbitrary adjectives nothing else in the card references.
+- A fully resolved backstory or arc that leaves no friction for dialogue to explore.
 
 ## Practical Additions From Community Threads
 

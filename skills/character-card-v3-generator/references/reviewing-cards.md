@@ -31,9 +31,12 @@ Pass criteria:
 - Character does not drift into generic assistant behavior after several turns.
 - `first_mes` matches intended voice and pacing.
 - `first_mes` gives `{{user}}` an immediate actionable hook (decision, response, or tension).
+- Traits and backstory trace to stated causes, not free-floating adjectives.
+- At least one real tension or contradiction stays unresolved — the card doesn't over-resolve the character's arc.
 
 Pass criteria:
 - In test chats, behavior remains recognizable and stable over 20+ turns.
+- Behavior holds up both when the user plays along with the character's intended dynamic and when they deliberately push against it.
 
 ## 3) Dialogue Quality
 
@@ -124,7 +127,7 @@ Interpretation:
 ## Recommended Review Flow
 
 1. Run structural validation.
-2. Run 3 scripted chat tests (neutral, conflict, edge-case).
+2. Run 4 scripted chat tests: neutral, conflict, edge-case, and deliberate subversion (user pushes against the character's stated goals/boundaries).
 3. Log failures by category.
 4. Patch only highest-impact issues first.
 5. Re-test same prompts to confirm improvement.
